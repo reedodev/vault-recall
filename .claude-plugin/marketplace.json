@@ -1,0 +1,21 @@
+{
+  "name": "vault-recall",
+  "owner": {
+    "name": "Reedo"
+  },
+  "metadata": {
+    "description": "Before a task, recall relevant past lessons from an Obsidian/markdown vault: Korean-aware bigram search, status and recency weighting, cached index (8k notes in under a second after the first run).",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "vault-recall",
+      "description": "Before a task, recall relevant past lessons from an Obsidian/markdown vault: Korean-aware bigram search, status and recency weighting, cached index (8k notes in under a second after the first run).",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/vault-recall"
+      ]
+    }
+  ]
+}
