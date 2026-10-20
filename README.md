@@ -55,6 +55,12 @@ node skills/vault-recall/scripts/recall.mjs ~/MyVault "유튜브 쇼츠 예약 �
 
 `node tests/run.mjs`가 SKILL.md 형식을 검사하고 예시 파일로 스크립트를 실제로 실행합니다. 푸시할 때마다 GitHub Actions가 같은 시험을 돌립니다(위 test 배지).
 
+<!-- credits -->
+## 출처와 영감
+
+- **노트 저장고 방식**: 검색 대상 보관함은 Andrej Karpathy의 [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) 방식(사람이 자료를 고르고 AI가 위키를 계속 고침)을 전제로 만들었습니다. 그 구조는 [obsidian-llm-wiki](https://github.com/reedodev/obsidian-llm-wiki)에 있습니다.
+- 검색 점수 방식(두 글자 단위 비교, 확인 상태·최근 가중치)과 코드는 이 저장소에서 직접 만든 것입니다.
+
 ## 만든 사람
 
 **리도**, AI 좌충우돌 실습 중인 20년차 엔지니어입니다. 매일 AI에게 일을 맡기다가 막힌 부분을 고쳐 가며 이 스킬을 만들었습니다.
@@ -67,5 +73,8 @@ node skills/vault-recall/scripts/recall.mjs ~/MyVault "유튜브 쇼츠 예약 �
 ## English
 
 Before a task, recall relevant past lessons from an Obsidian/markdown vault: Korean-aware bigram search, status and recency weighting, cached index (8k notes in under a second after the first run).
+
+**Credits.**
+- Assumes a vault run the way Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) describes (see [obsidian-llm-wiki](https://github.com/reedodev/obsidian-llm-wiki)). The search scoring and code are original to this repository.
 
 Install: `/plugin marketplace add reedodev/vault-recall` then `/plugin install vault-recall@vault-recall`, or copy `skills/vault-recall` into `~/.claude/skills/`. See [SKILL.md](skills/vault-recall/SKILL.md) for the full procedure. MIT License; third-party models, fonts and libraries keep their own licenses.

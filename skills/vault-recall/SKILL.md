@@ -54,3 +54,8 @@ description: "일을 시작하기 전에 내 옵시디언(마크다운) 노트 �
 - 뜻이 같은 다른 단어(예: "썸네일"과 "미리보기 이미지")는 찾지 못합니다. 결과가 없으면 표현을 바꿔 한 번 더 찾습니다.
 - 점수가 높다고 그 노트가 옳다는 뜻은 아닙니다. 노트의 상태와 날짜를 보고 판단합니다.
 - `.obsidian`, `.git`, `.trash` 폴더는 건너뜁니다.
+
+<!-- credits -->
+## 출처와 영감
+- **노트 저장고 방식**: 검색 대상 보관함은 Andrej Karpathy의 [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) 방식(사람이 자료를 고르고 AI가 위키를 계속 고침)을 전제로 만들었습니다. 그 구조는 [obsidian-llm-wiki](https://github.com/reedodev/obsidian-llm-wiki)에 있습니다.
+- 검색 점수 방식(두 글자 단위 비교, 확인 상태·최근 가중치)과 코드는 이 저장소에서 직접 만든 것입니다.
